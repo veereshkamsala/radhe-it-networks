@@ -3,6 +3,8 @@ export type Service = {
   description: string;
   items: string[];
   icon: "network" | "factory" | "shield" | "signal";
+  image: string;
+  imageAlt: string;
 };
 
 export const services: Service[] = [
@@ -11,6 +13,8 @@ export const services: Service[] = [
     description:
       "Reliable, scalable connectivity designed for new corporate offices, educational institutions, private hospitals, and commercial complexes.",
     icon: "network",
+    image: "enterprise-network.jpg",
+    imageAlt: "Rows of connected servers and network equipment in a data center",
     items: [
       "Structured cabling and campus LAN/WLAN design",
       "Cisco and Fortinet enterprise Wi-Fi, wireless site surveys, and WLAN controller deployments",
@@ -23,6 +27,8 @@ export const services: Service[] = [
     description:
       "Connected infrastructure for manufacturers, logistics hubs, and industrial sites across the Anantapur–Bengaluru corridor.",
     icon: "factory",
+    image: "industrial-iot.jpg",
+    imageAlt: "Engineer working with connected equipment on a factory floor",
     items: [
       "Rugged industrial networks for smart factories",
       "IP CCTV networks, NAS backups, and biometric access control",
@@ -35,6 +41,8 @@ export const services: Service[] = [
     description:
       "Practical security measures to help protect business networks, users, and branch communications.",
     icon: "shield",
+    image: "network-security.jpg",
+    imageAlt: "Close-up of a glowing circuit board representing network security",
     items: [
       "Fortinet FortiGate and Cisco ASA/Firepower next-generation firewall deployment and management",
       "Access control list and policy reviews",
@@ -46,6 +54,8 @@ export const services: Service[] = [
     description:
       "Flexible field and remote operations for tier-1/tier-2 telecom operators, ISPs, and enterprise teams that need SLA-backed support.",
     icon: "signal",
+    image: "telecom-network.jpg",
+    imageAlt: "Ethernet cables connected to a network switch",
     items: [
       "On-demand change requests, node insertions, 1G-to-10G ring splits, and core upgrades",
       "Last-mile fiber, 4G/5G CPE upgrades, and microwave-to-fiber migration",
